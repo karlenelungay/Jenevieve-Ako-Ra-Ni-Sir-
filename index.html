@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DESCENDANTS OF THE SUN</title>
+	<style type="text/css">
+		body {
+			font-family: "Garamond", "Georgia", serif;
+			margin: 0;
+			background-image: linear-gradient(#002B5B,#1A5F7A,#1A5F7A);
+		}
+		ul a.active{
+					background-color: #1A5F7A;
+					color: #002B5B;
+					}
+		.home{
+			text-shadow: 2px 3px #002B5B;
+			color: #1A5F7A;
+			}
+		
+		.Pone{
+			float: left;
+			text-align: left;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #002B5B;
+			}
+			
+		ul {
+			background-image: linear-gradient(#002B5B,#1A5F7A);
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #1A5F7A;
+		}
+
+		li {
+			float: right;
+		}
+
+		li a {
+			display: block;
+			color: #002B5B;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			
+		}
+
+		li a:hover {
+			background-color: #1A5F7A;
+			color: #002B5B;
+			text-transform: uppercase;
+		}
+		
+		/* Slider styling */
+		.slider {
+			width: 100%;
+			height: 10%;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.slide {
+			display: none;
+			position: center;
+			top: 0%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		
+		.slide img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}	
+		
+		/* frame video */
+		.frame{
+				padding-left: 0%;
+				}
+				
+		iframe{
+				width: 100%;
+				height: 500px;
+				}
+	</style>
+</head>
+<body>
+<ul>
+		<li><a href="About Me.html">About Me</a></li>
+		<li><a href="Cast.html">Cast</a></li>
+		<li><a href="Plot.html">Plot</a></li>
+		<li><a href="index.html" class="active">Home</a></li>
+	</ul>
+	
+	<!-- Slider -->
+	<div class="slider">
+		<div class="slide">
+			<img src="Descendants.jpg">
+		</div>
+		<div class="slide">
+			<img src="sun.jpg">
+		</div>
+		<div class="slide">
+			<img src="Descendants of the Sun.jpg">
+		</div>
+	</div>
+	
+	<br>
+	
+	<div class="home">
+	<h1 style="text-align:center;"> DESCENDANTS OF THE SUN </h1>
+	</div>
+	
+	<br>
+	<div class="Pone">
+	<p style="text-align: justify; margin-right:10px;"><strong>Descendants Of The Sun</strong>
+			 (Korean: 하이스쿨: 러브온) is a 2014 South Korean television series starring Kim Sae-ron, Nam Woo-hyun and Lee Sung-yeol of the band Infinite. It aired on KBS2 from July 11 to December 19, 2014 on Fridays at 20:55 for 20 episodes.</p>
+
+<p>Hi! School: Love On is a teen fantasy romance series about an angel who has no choice but to become a human after unintentionally saving a male student in danger. The now-mortal angel then interacts with teenage high school students and learns about love, friendship, and what it means to be human.</p>
+
+<p>Miyazaki wrote the screenplay after he decided the film would be based on the ten-year-old daughter of his friend Seiji Okuda, the film's associate producer, who came to visit his house each summer. At the time, Miyazaki was developing two personal projects, but they were rejected. With a budget of US$19 million, production of Spirited Away began in 2000. Pixar animator John Lasseter, a fan and friend of Miyazaki, convinced Walt Disney Pictures to buy the film's North American distribution rights, and served as executive producer of its English-dubbed version. Lasseter then hired Kirk Wise as director and Donald W. Ernst as producer, while screenwriters Cindy and Donald Hewitt wrote the English-language dialogue to match the characters' original Japanese-language lip movements.</p>
+
+<p>Originally released in Japan on 20 July 2001 by distributor Toho, the film received universal acclaim, grossing $395.8 million at the worldwide box office. Accordingly, it became the most successful and highest-grossing film in Japanese history with a total of ¥31.68 billion ($305 million). It held the record for 19 years until it was surpassed by Demon Slayer: Kimetsu no Yaiba – The Movie: Mugen Train in 2020.</p>
+
+<p>Spirited Away is regarded as Miyazaki's magnum opus and has often been listed among the greatest films of all time. It won the Academy Award for Best Animated Feature at the 75th Academy Awards, making it the first, and to date only, hand-drawn and non-English-language animated film to win the award. It was the co-recipient of the Golden Bear at the 2002 Berlin International Film Festival (shared with Bloody Sunday), and is within the top ten on the British Film Institute's list of "Top 50 films for children up to the age of 14". In 2016, it was voted the fourth-best film of the 21st century by the BBC, as picked by 177 film critics from around the world, making it the highest-ranking animated film on the list. In 2017, it was also named the second "Best Film...of the 21st Century So Far" by The New York Times. In 2022, it was ranked as the 75th greatest film of all time by the Sight & Sound critics poll.</p>
+
+	</div>
+	<div class="frame">
+	<iframe src="https://youtube.com/embed/wkHjOTFv60g?playist=wkHjOTFv60g&loop=1">
+	</iframe>
+	</div>
+	<br>
+	
+	<script>
+		// Slider functionality
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("slide");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			slides[slideIndex-1].style.display = "block";  
+			setTimeout(showSlides, 5000); // Change image every 6 seconds
+		}
+		
+		// Responsive navbar functionality
+	
+	</script>
+</body>
+</html>
